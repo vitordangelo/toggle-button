@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rascunho</title>
+	<link rel="stylesheet" href="css/switch.css">
+</head>
+<body>
+
+	<input type="button" class="check" value="Check"/>
+	<input type="button" class="uncheck" value="Uncheck"/>
+  	<input type="checkbox" class="cb-element" name="ckbox"/>
+
+	<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+		
+    	$('.check').click(function() {
+    		$('input[name=ckbox]').prop('checked', true);
+		});
+		
+		$('.uncheck').click(function() {
+    		$('input[name=ckbox]').prop('checked', false);
+		});
+
+		
+	</script>
+</body>
+</html>
